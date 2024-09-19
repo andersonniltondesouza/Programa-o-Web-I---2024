@@ -9,5 +9,9 @@ $salario2=$salario1;
 
 $salario1*=1.1;
 
-echo("Valor Salário 1: $salario1 e Valor Salário 2: $salario2");
+
+for ($x = 0; $x <= 10; $x++) {
+    echo "The number is: $x <br>";
+    }
+
 ?>
