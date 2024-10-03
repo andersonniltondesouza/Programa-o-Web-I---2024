@@ -10,13 +10,13 @@
     <form action="atividade1.php" method='POST'>
         <div>
             <label for="n1">Número 1</label>
-            <input type="number">
+            <input type="number" step = "any" name="valor1" id="n1">
             <br>
             <label for="n2">Número 2</label>
-            <input type="number">
+            <input type="number" step = "any" name="valor1" id="n2">
             <br>
             <label for="n3">Número 3</label>
-            <input type="number">
+            <input type="number" step = "any" name="valor1" id="n3">
             <br>
             <input type="submit">   
         </div>
