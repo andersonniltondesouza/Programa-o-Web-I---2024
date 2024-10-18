@@ -9,10 +9,16 @@ try {
     if ($dbconn) {
         echo "database conectado...";
 
-        $result = pg_query($dbconn,"SELECT COUNT(*) AS QTDTABS FROM PG_TABLES");
+        $termoBusca = $_POST["campo_primeiro_nome"];
 
+        $result = pg_query($dbconn,"SELECT * FROM TBPESSOA WHERE PESNOME ILIKE '%$termoBusca%'");
+
+        
+        if (pg_num_rows($result) == 0){
+            echo "Nada Encontrado";
+        }
         while ($row = pg_fetch_array($result)) {
-            echo "<br>Result :".$row['qtdtabs'];
+            echo print_r($row). "<br>";
         }
     }
 } catch (Exception $e) {
@@ -20,3 +26,4 @@ try {
 }
 
 ?>
+
