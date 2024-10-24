@@ -7,7 +7,6 @@
         private $cidade;
         private $estado;
         private $cep;
-
         
     }
 ?>

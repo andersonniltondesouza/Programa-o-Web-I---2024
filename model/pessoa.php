@@ -4,7 +4,6 @@
         private $nome;
         private $sobrenome;
         
-
         public function ___construct() {
             $this->idade = 0;
         }

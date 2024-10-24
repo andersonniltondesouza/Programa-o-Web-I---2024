@@ -8,9 +8,7 @@ $liquido = 0;
 function calculaFolhaPagto(&$bruto, &$imposto, &$liquido) {
 
 $bruto = 10000;
-
 $imposto = 1000;
-
 $liquido = $bruto - $imposto;
 
 }
