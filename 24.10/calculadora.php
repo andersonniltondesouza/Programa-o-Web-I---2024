@@ -1,5 +1,0 @@
-<?php
-
-    $calculadora = new Calculadora();
-
-?>
